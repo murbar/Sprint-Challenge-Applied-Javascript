@@ -32,39 +32,49 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
-2. What is an event?
+> The DOM is an API for HTML documents. It represents elements of the document as objects that can be programmatically manipulated (e.g. with JavaScript) to modify the structure, appearance and behavior of the document.
 
-3. What is an event listener?
+1. What is an event?
 
-4. Why would we convert a NodeList into an Array?
+> An event is triggered when the user or browser interacts with the DOM. An event can be triggered with a click, a scroll, or any of the many other actions the DOM makes available to us. We use event listeners to "handle" events.
 
-5. What is a component?
+1. What is an event listener?
+
+> Event listeners can be set on any element and allow us to "catch" events as they bubble up the DOM tree. We can specify a callback function to handle the event and perform arbitrary operations.
+
+1. Why would we convert a NodeList into an Array?
+
+> NodeLists are array-like but only have a limited set of built-in methods. One reason to convert a NodeList to an array is to access convenience functions defined on the Array prototype, like `.map` and `.reduce`.
+
+2. What is a component?
+
+> Components are pieces of HTML, CSS and JavaScript that are used together to build re-useable bundles of elements that share functionality and/or appearance. They are the "building blocks" for modern web apps.
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+- [ ] Fork the project into your GitHub user account
+- [ ] Clone the forked project into a directory on your machine
+- [ ] Create a pull request before you start working on the project requirements. You will continuously push your updates throughout the project.
+- [ ] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code paying particular attention to the Tabs component and the Cards components. You will notice they share a data attribute. We will be using this data attribute to determine which cards should show when each tab is selected.
+- [ ] Look through the HTML code paying particular attention to the Tabs component and the Cards components. You will notice they share a data attribute. We will be using this data attribute to determine which cards should show when each tab is selected.
 
-* [ ] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item.  **Note: You will need to un-comment the code after the lines of instructions.  The code is commented out so you can work error-free**
+- [ ] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item. **Note: You will need to un-comment the code after the lines of instructions. The code is commented out so you can work error-free**
 
-* [ ] Once you get your `Tab` component working properly add a couple more articles yourself and check out how it works.
+- [ ] Once you get your `Tab` component working properly add a couple more articles yourself and check out how it works.
 
 ## Stretch Problems
 
 Your stretch challenge is to write the functionality of a `Carousel` component. You have the HTML and CSS already in place, simply un-comment the HTML in the `index.html` file. This is an advanced challenge, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. You may reference the `Tabs.js` file for assistance.
 
-* [ ] Complete the carousel functionality in `Carousel.js`
+- [ ] Complete the carousel functionality in `Carousel.js`
 
-* [ ] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
+- [ ] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
 
-* [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
+- [ ] Create an 'infinite loop' carousel. In which as long as you click on an arrow, the array of images will loop over itself.
 
-* [ ] If you have finished the above, play around with the styling on all the components, and understand how each is built.
+- [ ] If you have finished the above, play around with the styling on all the components, and understand how each is built.
